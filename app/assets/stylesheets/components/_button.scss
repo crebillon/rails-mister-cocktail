@@ -1,0 +1,8 @@
+.button {
+  background: $flashier-pink;
+  color: white;
+  &:hover {
+  background: $flash-pink;
+  color: white;
+  }
+}

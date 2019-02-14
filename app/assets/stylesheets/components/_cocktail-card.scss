@@ -1,0 +1,16 @@
+.main-container {
+  display: flex;
+}
+
+.cocktail-card {
+  background-size: cover;
+  background-position: center;
+  background-image: asset-url('cocktail1.jpg');
+  color: white;
+  width: 40vh;
+  height: 400px;
+  a {
+    color: white;
+    padding: 20px;
+  }
+}
