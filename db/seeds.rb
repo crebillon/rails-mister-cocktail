@@ -2,6 +2,7 @@ require 'json'
 require 'open-uri'
 
 puts "Deleting old database"
+Cocktail.destroy_all
 Ingredient.destroy_all
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
