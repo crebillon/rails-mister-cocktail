@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  background-color: $pink-light;
+  padding: 15px;
+}
+
+.footer p {
+  color: $dark-black;
+  margin-bottom: 0;
+}

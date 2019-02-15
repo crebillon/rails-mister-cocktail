@@ -1,6 +1,20 @@
 <div class="container">
+  <br>
   <div class="main-container">
     <div class="cards">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="search-form">
+            <%= form_tag cocktails_path, method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control",
+              placeholder: "Seize a cocktail and press enter"
+            %>
+            <% end %>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <%  @cocktails.each do |cocktail| %>
           <div class="col-xs-12 col-sm-6 col-md-4">

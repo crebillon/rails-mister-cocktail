@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <%= favicon_link_tag asset_path('cocktail.png') %>
+    <title>Pretty Pink Cocktails</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,9 +14,10 @@
 
   <body>
     <%= render 'layouts/navbar' %>
-    <div class="container">
+    <div class="container body">
       <%= yield %>
     </div>
+    <%= render 'layouts/footer' %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>
   </body>
