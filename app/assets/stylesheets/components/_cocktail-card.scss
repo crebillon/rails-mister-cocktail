@@ -6,10 +6,17 @@
   background-size: cover;
   background-position: center;
   color: white;
-  width: 40vh;
+  border-radius: 3px;
+  width: 45vh;
   height: 400px;
-  a {
-    color: white;
-    padding: 20px;
+  margin: 15px 0;
+  color: white;
+  padding: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
   }
 }

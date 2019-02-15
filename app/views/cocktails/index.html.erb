@@ -1,21 +1,18 @@
 <div class="container">
-  <h1>Recipes available</h1>
-  <br>
   <div class="main-container">
     <div class="cards">
       <div class="row">
         <%  @cocktails.each do |cocktail| %>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="cocktail-card">
-            <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <%= link_to cocktail_path(cocktail.id), class:"card-link" do  %>
+              <div class="cocktail-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, crop: :fill %>')">
+                <%= cocktail.name %>
+              </div>
+            <% end %>
           </div>
-        </div>
         <% end %>
       </div>
     </div>
   </div>
-
-  <br>
-
-  <%= link_to 'Create a new cocktail', new_cocktail_path, class:"btn button" %>
+<br>
 </div>
