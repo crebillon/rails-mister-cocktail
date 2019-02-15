@@ -1,0 +1,11 @@
+.image-list {
+    position: absolute;
+    right: 200px;
+    top: 150px;
+}
+
+@media (max-width: 600px) {
+    .image-list  {
+        display:none;
+    }
+}
